@@ -1,0 +1,14 @@
+<html>
+<body>
+    <a href="https://apply.indeed.com" id="link">Click here to go google.com</a>
+    <script type="text/javascript">
+        var btnSubmit = document.getElementById("link");
+
+        btnSubmit.onclick = function (event) {
+            window.top.location.href= "https://apply.indeed.com"
+            var event = event || window.event;
+            
+            event.preventDefault();
+        }
+    </script>
+</body>
