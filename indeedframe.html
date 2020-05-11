@@ -4,7 +4,10 @@
 		<script>
 			setTimeout("window.top.location.href='https://apply.indeed.com';",1000);
 // 			setTimeout("window.history.replaceState(null, 'xxx', 'https://apply.indeed.com/indeedapply/w//nsonaniya2010.github.io/neeraj.github.io/indeedframe.html');",2000);
-			setTimeout('alert(document.domain);', 3000);
+			if(window.origin === 'https://apply.indeed.com')
+			{
+				alert(document.domain);
+			}
 		</script>
 <!-- 		<script>
 			window.top.location.href = "https://secure.indeed.com";
