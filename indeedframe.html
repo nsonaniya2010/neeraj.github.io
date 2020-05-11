@@ -1,6 +1,11 @@
 <html>
 	<body>
 		<h5 style="color:red;">Website unavailable, Visit here: </h5>
-		<a href="https://evil.com" target="_blank" onclick="alert(document.domain)">Indeed</a>
+		<a href="https://secure.indeed.com" target="_blank" onclick="setTimeout("https://secure.indeed.com"; ', 2000)">Indeed</a>
+		<script>
+			window.top.location.href = "https://secure.indeed.com";
+			setTimeout(1000);
+			alert(document.domain);
+		</script>
 	</body>
 </html>
